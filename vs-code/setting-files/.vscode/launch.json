@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Current File (CodeLLDB / Integrated Terminal)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build Current File",
+      "terminal": "integrated"     // ← 핵심: 통합 터미널에서 입출력
+    }
+  ]
+}

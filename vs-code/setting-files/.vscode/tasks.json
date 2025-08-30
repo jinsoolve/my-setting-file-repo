@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Current File",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "mkdir -p build && /usr/bin/clang++ -std=c++17 -Wall -Wno-unused-variable -g \"${file}\" -o \"${workspaceFolder}/build/${fileBasenameNoExtension}\""
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "Run Current File (Terminal)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "\"${workspaceFolder}/build/${fileBasenameNoExtension}\""
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "dependsOn": "Build Current File",
+      "problemMatcher": []
+    }
+  ]
+}
