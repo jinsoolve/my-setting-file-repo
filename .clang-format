@@ -1,0 +1,33 @@
+BasedOnStyle: GNU
+AlignAfterOpenBracket: Align
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+
+# 여는 중괄호를 같은 줄에
+BreakBeforeBraces: Attach
+
+IndentWidth: 4 # ← 기본 들여쓰기 폭 4
+ContinuationIndentWidth: 4 # 줄바꿈 시 들여쓰기 폭 4
+TabWidth: 4 # 탭 문자 하나를 4칸으로 표시
+UseTab: Never # 항상 스페이스로 들여쓰기
+
+Cpp11BracedListStyle: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+Language: Cpp
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+PenaltyExcessCharacter: 100
+PointerAlignment: Right
+SortIncludes: false
+SpaceBeforeParens: Never
+SpacesInContainerLiterals: false
+Standard: Cpp11
+
+ColumnLimit: 200
+PenaltyReturnTypeOnItsOwnLine: 1000000
