@@ -1,8 +1,8 @@
-cpp의 live template를 위한 코드들 입니다.
+vs-code에서 cpp의 snippet 기능을 위한 코드들 입니다.
 
 # cpp.json
 
-cpp의 live template를 위한 코드들 입니다.
+vs-code에서 cpp의 snippet을 위한 설정 파일입니다.
 
 보통 `'~/Library/Application Support/Code/User/snippets/cpp.json'` 에 위치해 있습니다.
 
