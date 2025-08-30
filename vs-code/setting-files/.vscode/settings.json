@@ -1,45 +1,18 @@
 {
-  // --- [추가] Prettier를 전체 기본 포매터로 지정 ---
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // --- [추가] JS/TS 계열에 Prettier 지정(확실히) ---
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
-  // --- [선택] Prettier 설정 의존성 방지 ---
-  // 프로젝트에 .prettierrc가 없다면 false로 두세요(없으면 포맷 안 됨).
-  "prettier.requireConfig": false,
-
-  // --- [선택] 혹시 잘못 설정해둔 경로가 있으면 비워두세요 ---
-  // "prettier.prettierPath": ""
-
-  // ====== 당신이 이미 가지고 있던 설정들 ======
-  "files.associations": {
-    "ios": "cpp",
-    "string": "cpp",
-    "vector": "cpp",
-    "limits": "cpp",
-    "iostream": "cpp",
-    "set": "cpp",
-    "deque": "cpp",
-    "list": "cpp",
-    "map": "cpp",
-    "optional": "cpp",
-    "queue": "cpp",
-    "stack": "cpp",
-    "unordered_map": "cpp",
-    "unordered_set": "cpp",
-    "variant": "cpp",
-    "__tree": "cpp"
-  },
+  "[cpp]": { "editor.defaultFormatter": "xaver.clang-format" },
+  "[c]": { "editor.defaultFormatter": "xaver.clang-format" },
 
   "editor.formatOnSave": true,
+  "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
 
-  "[cpp]": { "editor.defaultFormatter": "xaver.clang-format" },
-  "[c]":   { "editor.defaultFormatter": "xaver.clang-format" },
-
+  "editor.formatOnSave": true,
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false
